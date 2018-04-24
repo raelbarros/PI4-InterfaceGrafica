@@ -1,0 +1,19 @@
+usurario
+    ID
+    NOME
+    SENHA
+    DATA_CADASTRO
+    enable
+
+CREATE SCHEMA usuario_test;
+
+use usuario_test;
+
+CREATE TABLE usuario (
+    ID INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    NOME VARCHAR(200),
+    SENHA VARCHAR(50) NOT NULL,
+    DATA_CAD DATE NOT NULL,
+    PERFIL VARCHAR(10),
+    ENABLED BOOLEAN
+);
